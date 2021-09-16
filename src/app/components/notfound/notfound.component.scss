@@ -1,0 +1,12 @@
+.container {
+  height: 85vh;
+}
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  font-family: "Allison", cursive;
+}

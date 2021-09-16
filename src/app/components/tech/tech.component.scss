@@ -1,0 +1,22 @@
+.container {
+  .row {
+    .body {
+      img {
+        box-shadow: 5px 5px 13px gray;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          box-shadow: 4px 3px 11px 9px rgb(200 152 44 / 46%);
+          transform: translateY(-3px);
+        }
+      }
+      span {
+        font-family: "Allison", cursive;
+        color: white !important;
+      }
+      h5 {
+        font-family: "Allison", cursive;
+        color: #eac98b !important;
+      }
+    }
+  }
+}

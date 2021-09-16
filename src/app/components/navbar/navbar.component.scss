@@ -1,0 +1,15 @@
+.active {
+  background: #06f !important;
+  border-radius: 15px;
+}
+nav {
+  background-color: #141516 !important;
+}
+li {
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    margin-top: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+}
