@@ -15,7 +15,7 @@ export class TechComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.newService.headlineTech().subscribe((res) => {
+    this.newService.headlineTech('technology').subscribe((res) => {
       this.techData = res.articles;
     });
   }

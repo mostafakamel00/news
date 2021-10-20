@@ -18,7 +18,7 @@ export class NewsArabComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.arabService.newsArab().subscribe((res) => {
+    this.arabService.newsArab('business').subscribe((res) => {
       // console.log('arab', res);
       this.arabData = res.articles;
     });

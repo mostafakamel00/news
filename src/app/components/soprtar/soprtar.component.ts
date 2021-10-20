@@ -16,7 +16,7 @@ export class SoprtarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.arabService.sportEg().subscribe((res) => {
+    this.arabService.sportEg('sports').subscribe((res) => {
       // console.log(res);
       this.sportEg = res.articles;
     });

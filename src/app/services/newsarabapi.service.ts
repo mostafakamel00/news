@@ -7,16 +7,15 @@ import { environment } from 'src/environments/environment.prod';
   providedIn: 'root',
 })
 export class NewsarabapiService {
-  private headlineApi = environment.headlineApi;
   constructor(private http: HttpClient) {}
-  newsArab(): Observable<any> {
+  newsArab(mediatype: string): Observable<any> {
     return this.http.get(
-      `${this.headlineApi}?country=eg&category=business&apiKey=c11e932477b244e0b542b991d30b2962`
+      `https://newsapi.org/v2/top-headlines?country=eg&category=${mediatype}&apiKey=c11e932477b244e0b542b991d30b2962`
     );
   }
-  sportEg(): Observable<any> {
+  sportEg(mediatype: string): Observable<any> {
     return this.http.get(
-      `${this.headlineApi}?country=eg&category=sports&apiKey=c11e932477b244e0b542b991d30b2962`
+      `https://newsapi.org/v2/top-headlines?country=eg&category=${mediatype}&apiKey=c11e932477b244e0b542b991d30b2962`
     );
   }
 }
